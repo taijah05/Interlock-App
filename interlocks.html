@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="queries.css">
+<div class="box">
+    <h1>Interlock Study <em>Game</em></h1>
+
+    <div class="gameBox">
+        <h2>Which interlocks would you like to study?</h2>
+
+        <select id="gameChoice">
+            <option value="controls">Controls</option>
+            <option value="dosimetry">Dosimetry</option>
+            <option value="outer gantry">Outer Gantry</option>
+            <option value="hospital">Hospital</option>
+            <option value="ion source">Ion Source</option>
+            <option value="magnet">Magnet</option>
+            <option value="rf">RF</option>
+            <option value="scanning">Scanning</option>
+            <option value="treatment room">Treatment Room</option>
+            <option value="vacuum">Vacuum</option>
+            <option value="cooling">Cooling</option>
+        </select> 
+        <br/>
+
+		<div class="answerBlock">
+        <p class="inter" id="interlockHere">You'll know these interlocks one day...</p>
+        <p class="desc" id="descriptionHere">Name</p>
+		<br>
+		<br>
+		<p class="status" id="statusHere">Satisfied Condition</p>
+		</div>
+        <button onclick="interlockGame()">Generate Interlock</button>
+        <button class="descriptionButton" onclick="showDescription()">Show Description</button>
+    </div>
+</div>
+    <script src="scripts.js"></script>
+</body>
+</html>
